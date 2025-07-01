@@ -1,0 +1,38 @@
+
+Bias Check - Gender:
+Gender
+Female        0.406314
+Male          0.460814
+Non-binary    0.334975
+Name: Loan_Approved_Binary, dtype: float64
+
+Bias Check - Race:
+Race
+Asian              0.453177
+Black              0.362529
+Hispanic           0.385393
+Multiracial        0.468599
+Native American    0.425532
+White              0.456891
+Name: Loan_Approved_Binary, dtype: float64
+
+Bias Check - Disability_Status:
+Disability_Status
+No     0.442640
+Yes    0.349498
+Name: Loan_Approved_Binary, dtype: float64
+
+Bias Check - Language_Proficiency:
+Language_Proficiency
+Fluent     0.438528
+Limited    0.391421
+Name: Loan_Approved_Binary, dtype: float64
+
+Bias Check - Zip_Code_Group:
+Zip_Code_Group
+High-income Suburban     0.451953
+Historically Redlined    0.373178
+Rural                    0.447670
+Urban Professional       0.444811
+Working Class Urban      0.412070
+Name: Loan_Approved_Binary, dtype: float64

@@ -1,0 +1,13 @@
+Accuracy: 0.648
+              precision    recall  f1-score   support
+
+       False       0.60      0.51      0.55       840
+        True       0.68      0.75      0.71      1160
+
+    accuracy                           0.65      2000
+   macro avg       0.64      0.63      0.63      2000
+weighted avg       0.64      0.65      0.64      2000
+
+Bias Report (Gender):
+Female approval rate: 0.7131857555341675
+Male approval rate: 0.5671175858480749

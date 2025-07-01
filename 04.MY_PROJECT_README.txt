@@ -1,0 +1,85 @@
+# 🧠 AI Bias Bounty 2025 – Loan Approval Bias Detection
+
+## 📌 Problem Statement
+We aim to detect and analyze bias in loan approval predictions using a synthetic dataset. The project helps highlight real-world risks of demographic bias in automated decision-making systems.
+
+## 🧠 Model Summary
+We used a Logistic Regression model to predict loan approvals.  
+Key steps:
+- Cleaned and preprocessed the data (encoded categorical variables, scaled features).
+- Trained and validated the model.
+- Performed fairness checks on multiple attributes like Gender, Race, Disability Status, Language Proficiency, and Zip Code Group.
+
+## ⚖️ Fairness Considerations
+We visualized bias across sensitive attributes using approval rate plots.  
+Significant disparities in approval rates were observed, especially across gender and racial groups.  
+Visuals and fairness reports are provided in the `outputs/bias_plots` and `reports` folders.
+
+## 📂 Project Structure
+
+```
+ai-bias-bounty-2025/
+│
+├── datasets/                      # Dataset CSV and Excel files
+├── outputs/
+│   └── bias_plots/               # All bias visualizations
+├── reports/
+│   ├── fairness_report.txt       # Written bias findings
+│   └── predictions.csv           # Model predictions on test data
+├── resources/                    # Files provided by the hackathon team
+├── src/
+│   ├── main.py                   # Main training and evaluation pipeline
+│   ├── model.py                  # Raw bias detection script
+│   ├── visualize.py              # Older visualization tool
+│   ├── inspect_columns.py        # Dataset preview/debug
+│   └── bias_visualization.py     # Current multi-attribute bias checker
+├── submission.csv                # Final model submission file
+├── generate_submission.py        # Generates the above from test data
+├── loan_model.py                 # All-in-one script for core logic
+├── README.md                     # This file
+└── ...etc
+```
+
+## ▶️ How to Run the Project
+
+> ✅ Ensure Python 3.10+ is installed  
+> ✅ Run commands from the project folder
+
+```bash
+# 1. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate  # for Windows
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run main model training
+python src/main.py
+
+# 4. Run bias visualizations
+python src/bias_visualization.py
+
+# 5. Generate final submission file
+python generate_submission.py
+```
+
+## 🛠️ Tools & Libraries Used
+- Python 3.10+
+- pandas, numpy, matplotlib, seaborn
+- scikit-learn for ML and evaluation
+
+## ✅ Final Output
+- ✔️ `submission.csv`
+- ✔️ `fairness_report.txt`
+- ✔️ 5 Bias Visualization Plots
+- ✔️ Completed Codebase
+
+## 📜 License
+This project uses the MIT License.
+
+## 🎥 Demo Video
+
+Watch the demo here: [Click to view demo](https://drive.google.com/file/d/1OqhuZUZaGOXsG7IbigeSIBeY8yGqp9xC/view?usp=sharing)
+
+
+---
